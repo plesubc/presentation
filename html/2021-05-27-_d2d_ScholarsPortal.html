@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Dryad2dataverse</title>
+
+		<link rel="stylesheet" href="https://plesubc.github.io/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="https://plesubc.github.io/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="custom/ubc-modified.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://plesubc.github.io/reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+			<section data-markdown="./Markdown/d2d_ScholarsPortal_27May2021.md" 
+		         data-charset="utf-8"
+			 data-separator-notes="^Note:">
+			</section>
+			</div>
+		</div>
+
+		<script src="https://plesubc.github.io/reveal.js/dist/reveal.js"></script>
+		<script src="https://plesubc.github.io/reveal.js/plugin/notes/notes.js"></script>
+		<script src="https://plesubc.github.io/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="https://plesubc.github.io/reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: 'zoom',
+				parallaxBackgroundImage: './Images/GreyWallpaper.png',
+				parallaxBackgroundSize: '4000px 2250px',
+				parallaxBackgroundHorizontal: 400,
+				parallaxBackgroundVertical: 50,
+							
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			//printing pdf
+			//Reveal.configure({ showNotes: true });
+			//Reveal.configure({ pdfSeparateFragments: false });
+			//Reveal.configure({ pdfMaxPagesPerSlide: 1 });
+			//Reveal.configure({ showNotes: 'separate-page' });
+		</script>
+	</body>
+</html>
