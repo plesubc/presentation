@@ -1,6 +1,6 @@
 # Dataverse at UBC Library
 
-![](Images/Panel/worker.png)
+![](Images/2021-11-17_Dataverse_Panel/worker.png)
 
 - Eugene Barsky and Paul Lesack, UBC Library
 - November 2021
@@ -26,7 +26,7 @@ Note:
 
 ---
 # Research Data 
-![inline](Images/Panel/image1.jpg)
+![inline](Images/2021-11-17_Dataverse_Panel/image1.jpg)
 
 
 Note:
@@ -44,7 +44,7 @@ The student wasn't very good and I (Paul) had to a lot of the work. Peter Ward w
 
 ---
 # Research Data 
-![inline](Images/Panel/image2.jpg)
+![inline](Images/2021-11-17_Dataverse_Panel/image2.jpg)
 
 
 Note:
@@ -90,7 +90,7 @@ Note:
 ---
 # Research Data
 
-![inline](Images/Panel/image3.jpg)
+![inline](Images/2021-11-17_Dataverse_Panel/image3.jpg)
 
 An example of a metadata enhancement request
 
@@ -111,7 +111,7 @@ Note:
 
 ---
 
-![inline](Images/Panel/dryad2dataverseLogo.png)
+![inline](Images/2021-11-17_Dataverse_Panel/dryad2dataverseLogo.png)
 
 ---
 
@@ -177,7 +177,7 @@ Not on PyPi. It may be somewhat *too* specialized for that.
 
 ---
 
-![inline](Images/Panel/abacus_logo.png)
+![inline](Images/2021-11-17_Dataverse_Panel/abacus_logo.png)
 
 ---
 # Licensed data
