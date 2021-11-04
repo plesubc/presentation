@@ -6,13 +6,13 @@
 
 		<title>Dataverse Panel Discussion</title>
 
-		<link rel="stylesheet" href="https://plesubc.github.io/reveal.js/dist/reset.css">
-		<link rel="stylesheet" href="https://plesubc.github.io/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
 		<link rel="stylesheet" href="custom/ubc-no-logo.css">
 		<!--<link rel="stylesheet" href="custom/ubc-modified.css">-->
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="https://plesubc.github.io/reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
 		
 	</head>
 	<body>
@@ -29,10 +29,10 @@
 			</div>
 		</div>
 
-		<script src="https://plesubc.github.io/reveal.js/dist/reveal.js"></script>
-		<script src="https://plesubc.github.io/reveal.js/plugin/notes/notes.js"></script>
-		<script src="https://plesubc.github.io/reveal.js/plugin/markdown/markdown.js"></script>
-		<script src="https://plesubc.github.io/reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="../reveal.js/dist/reveal.js"></script>
+		<script src="../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -56,5 +56,12 @@
 			//Reveal.configure({ pdfMaxPagesPerSlide: 1 });
 			//Reveal.configure({ showNotes: 'separate-page' });
 		</script>
+		<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
 	</body>
 </html>

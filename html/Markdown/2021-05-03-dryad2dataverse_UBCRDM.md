@@ -4,7 +4,7 @@
 
 ## Where 
 
-![Dryad2dataverse Image](/Images/dryad2dataverseLogo.png)
+![Dryad2dataverse Image](Images/dryad2dataverseLogo.png)
 
 * Source: [github.com/ubc-library-rc/dryad2dataverse](https://github.com/ubc-library-rc/dryad2dataverse)
 * Documentation: [ubc-library-rc.github.io/dryad2dataverse/](https://ubc-library-rc.github.io/dryad2dataverse/)

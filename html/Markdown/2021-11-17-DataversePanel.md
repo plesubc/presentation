@@ -2,8 +2,9 @@
 
 ![](Images/2021-11-17_Dataverse_Panel/worker.png)
 
-- Eugene Barsky and Paul Lesack, UBC Library
-- November 2021
+Eugene Barsky and Paul Lesack, UBC Library<!-- .element: style="text-align: left;"  -->   
+November 2021<!-- .element: style="text-align: left;"  --> 
+
 
 --- 
 
@@ -16,6 +17,9 @@
 - dryad2dataverse platform
     - Harmonizing data holdings
 
+Note:
+
+The presentation doesn't seem to follow this overview
  
 ---
 # Research Data 
@@ -33,8 +37,8 @@ Note:
 
 ---
 # Research Data 
-- Hired a PhD student to do data curation
-- Took a lot of time and resources, data dictionaries, recoding
+- Hired a PhD student to curate the data sets
+- Took a lot of time and resources, creating data dictionaries, recoding
 - Data management vs. data curation
 
 
@@ -119,7 +123,7 @@ Note:
 - A platform agnostic tool which harvests material from Dryad
 - Can be automated if required
 - Requires zero researcher effort
-- Associated python package can be used for other metadata conversions
+- Associated Python 3 package can be used for other metadata conversions
 
 
 Note:
