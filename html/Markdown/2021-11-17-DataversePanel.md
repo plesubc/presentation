@@ -1,21 +1,15 @@
-# Dataverse at UBC Library
-
-![](Images/2021-11-17_Dataverse_Panel/worker.png)
-
+# Dataverse at UBC Library<!-- .element: style="text-align: left;" class="r-fit-text" --> 
 Eugene Barsky and Paul Lesack, UBC Library<!-- .element: style="text-align: left;"  -->   
 November 2021<!-- .element: style="text-align: left;"  --> 
 
-
+![](Images/2021-11-17_Dataverse_Panel/worker.png)
 --- 
 
 # Overview 
 
 - Research data - Scholars Portal Dataverse 
-    - Mediated deposits - Curation  - Allocation of Dataverses
 - Licensed data - Abacus Dataverse
-    - Authentication - Managing data - API use    
 - dryad2dataverse platform
-    - Harmonizing data holdings
 
 Note:
 
