@@ -131,9 +131,34 @@ In this case, the plain text file didn't change but the SAS/SPSS files did.
 	* interface overview
 
 * Use cases: go through the above list and show how damage could be used
+	* My SPSS/Stata/R job fails when I try to load a file:
+		* cf. Data corruption: CIS 2018 — Jan 13, 2022
+		* Damage can tell you that one of the files is filled with null characters; ie, the file is corrupt.
 
-* Caveats:
-	Line endings on different platforms
+	* Data files are too short
+		* cf. NTS 2020 — Jan 25, 2022
+		* The Visit file has last record corrupted entirely. It has 49153 records, but it should have 83033 records according to the codebook.
+		* The Trips file appears way too short and has the last record *partially* corrupted. There's 12695 records, but there's supposed to be 39682 according to the codebook
+
+	* There could be a problem with a download; something seems wrong
+		* cf. CIS 2018 — Jan 13, 2022
+		* Other university is reporting errors
+		* UBC reports its file size + compares to material on DLI FTP site
+		* They match, but the other institution's doesn't, so it's a download problem.
+
+* Other considerations:
+	*Line endings on different platforms are different
+	*Linux and mac use a line feed ('\n')
+	*Windows uses a line feed plus a carriage return ('\n\r')
+	This means that each line, if converted from one format to another (which FTP can potentially do automatically), is one byte shorter or longer
+	*Damage gives a Windows line ending warning for text files
+
+* Encoding issues
+	* Not all text files are created the same way.
+	* Characters with diacritical marks require an *encoding*, and that can vary from platform to platform
+	* Statcan sometimes uses Windows-1252, sometimes UTF-8. (Note: they should switch to using UTF-8)
+	* What does this mean in practice?
+		* The classic Labour Force Survey example: 
 
 * The hammer
 	* show how the use of damage *at the dissemination* stage could be used to reduce or eliminate almost all of these problems.
