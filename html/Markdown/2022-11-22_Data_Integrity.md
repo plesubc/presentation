@@ -11,13 +11,12 @@
 .top {vertical-align:top !important;}
 
 </style>
-
-
+<!--
 # Title 
 ### Academic subtitle
 
 ## Authors etc. 
----
+
 Examples:
 
 * What has changed in a data release — Sept 28, 2018:
@@ -108,7 +107,7 @@ In this case, the plain text file didn't change but the SAS/SPSS files did.
 
 		All of the other lines are as you'd expect; a line length of 1189 for a flat ASCII file. The last line, however, consists of 744 characters plus 108065536 null characters.
 
-		This explains why the text file is a gigantic 107 Mb in sise.
+		This explains why the text file is a gigantic 107 Mb in size.
 
 * Also in the NTS 2020 — Jan 25, 2022: 
 
@@ -116,6 +115,10 @@ In this case, the plain text file didn't change but the SAS/SPSS files did.
 		The Visit file has last record corrupted entirely. It has 49153 records, but it should have 83033 records according to the codebook.
 		The Trips file appears way too short and has the last record *partially* corrupted. There's 12695 records, but there's supposed to be 39682 according to the codebook.
 
+* A very recent example: GSS Cycle 30: November 8, 2022:
+	There was a data release but no information given.
+	The readme was unchanged. 
+	All the files were replaced.
 
 # Outline:
 
@@ -170,4 +173,178 @@ In this case, the plain text file didn't change but the SAS/SPSS files did.
 
 * Questions
 
+-->
+# How to damage your data
+## not destroy it
 
+* Jeremy Buhler (jeremy.buhler@ubc.ca)  
+	Data Librarian, University of British Columbia Library
+* Paul Lesack (paul.lesack@ubc.ca)  
+	Data/GIS analyst, University of British Columbia Library
+
+---
+
+You have downloaded some data
+
+---
+
+### OMGWTF
+
+![inline filtered](Images/2022-11-22_Data_Integrity/caution.png)
+
+`Downloaded: some_data_set_v2_2_3.zip`
+
+Note: 
+
+* Imagine you have `some_data_set` already. Lucky you! It has an update
+* Even this example is optimistic: it has version numbers!
+* How do you know what, if anything, has changed?
+
+---
+
+## Common data problems
+
+* timestamp changes<!-- .element: class="fragment" data-fragment-index="1" -->
+* duplication of data<!-- .element: class="fragment" data-fragment-index="2" -->
+* data file corruption<!-- .element: class="fragment" data-fragment-index="3" -->
+* data verification<!-- .element: class="fragment" data-fragment-index="4" -->
+* reproducibility<!-- .element: class="fragment" data-fragment-index="5" -->
+* verifying the authenticity of dissemination<!-- .element: class="fragment" data-fragment-index="7" -->
+
+Note:
+	Unfortunately, it's a rare data set that comes with perfect documentation. And even *with* perfect documentation, there can still be problems.
+	For example (the list above)
+
+---
+
+## I don't want to be a programmer
+
+ ![Damage Image](Images/2022-11-22_Data_Integrity/DamageImage.png)<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Data Manifest Generator<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+Note:
+	* There are many solutions to solving these problems, but almost all of them involve specialized knowledge
+	* If only there were a tool you could download that can help with this sort of thing
+	* Damage stands for Data Manifest Generator.
+	* It could have been YACA for Yet Another Clever Acronym.
+
+---
+
+## An overview of Damage
+
+![Damage Interface](Images/2022-11-22_Data_Integrity/DamageInterface.png)<!-- .element height="70%" width="70%" -->
+
+Note:
+	* Fairly straightforward interface
+	* Buttons are also found in the menu
+	* Use the buttons to add/remove the files you want analyzed
+	* Then hit the "Generate Manifest" button
+
+---
+
+## But that's not what what I want
+	
+![Damage Interface](Images/2022-11-22_Data_Integrity/DamagePreferences.png)<!-- .element height="70%" width="70%" -->
+
+Note:
+* Can customize the output using the preferences
+	1. Shorten path to the lowest common denominator
+	2. Skip the checking of statistical package files
+	3. Recursively checking an entire tree
+		* Don't accidentally select your entire drive unless you have a lot of time on your hands
+	4. The hash type ensures that the correct checksum is used. If your data set documentation comes with checksums in sha-256 format, this is where you select that option so that you can compare
+	5. And a variety of output formats, the most common of which are plain text and csv. JSON is also available, just in case.
+
+---
+
+## Damaging your files
+
+![Damage manifested](Images/2022-11-22_Data_Integrity/DamageManifested.png)<!-- .element height="70%" width="70%" class="fragment" data-fragment-index="1"-->
+
+One touch checking
+
+
+Note:
+
+	* To check your files, just hit the Generate Manifest button
+	* Note that this can take a while, and if you have a large file you may get a spinning beachball, some sort of windows warning, etc, while the manifest generates
+	* The output is displayed in the window.
+	* Most commonly used formats are plain text and csv, depending on whether or not you are a wordprocessor or spreadsheet person
+
+---
+## Saving
+
+* Not rocket science
+
+![Damage menus](Images/2022-11-22_Data_Integrity/DamageMenus.png)<!-- .element class="fragment" data-fragment-index="1"-->
+
+Note:
+	
+Like every other application, you can save your work. However, Damage is not intended to be an editor, so if you, for some reason, intend to make changes, you're probably better off opening the file in another application
+
+In fact, you can only make changes using Damage in the text and JSON files.
+
+Printing is rudimentary, because Damage is designed to create a file to go with your data, not to produce pretty printed output.
+
+---
+
+# So what?
+
+Use cases<!-- .element class="fragment" data-fragment-index="1"-->
+
+---
+# A simple example
+
+* A very recent example: GSS Cycle 30: November 8, 2022:
+	There was a data release but no information given.
+	The readme was unchanged. 
+	All the files were replaced.
+
+---
+
+# A more complex example
+
+* CIUS 2020
+
+---
+
+# A  data corruption example
+
+* Data corruption: CIS 2018 — Jan 13, 2022:
+
+There's something very wrong with the flat ASCII file in the CIS 2018 release (ie, /MAD_PUMF_FMGD_DAM/Root/5200_CIS_ECR/2018/Data/RAW/CIS_2018.txt). More specifically, there's a problem with the last line of the file.
+
+All of the other lines are as you'd expect; a line length of 1189 for a flat ASCII file. The last line, however, consists of 744 characters plus 108065536 null characters.
+
+This explains why the text file is a gigantic 107 Mb in size.
+
+---
+
+# A technical aside
+
+`[x for x in a if x['md5'] in [y['md5'] for y in dmg_data]]`	
+
+Note:
+	This is where the CSV and JSON outputs work ease of comparison
+	* Both are easily machine readable, so it's very easy to use spreadsheets, R, Python or any other computer utility to compare file names/checksums/record lengths or whatever you need.
+	* This helps to identify changes and errors
+	* Damage can also identify encoding errors which can potentially cause problems between systems
+	 	* Most commonly, Windows-1252 vs UTF-8
+
+---
+
+# All of this is fine
+
+but. . . <!-- .element class="fragment" data-fragment-index="1"-->
+
+life would be easier if a manifest was included with every data package.<!-- .element class="fragment" data-fragment-index="2"-->
+
+Note: 
+	All of the examples above show the use of Damage *where there is no current manifest*.
+	Many of these problems can be discovered faster.
+	* Running damage before dissemination can discover those errors before they are propagated to the world
+	* Including a manifest created by Damage allows people downloading the data compare Damage manifests
+
+	
