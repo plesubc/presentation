@@ -366,13 +366,15 @@ Note:
 Note:
 Paul
 
-* You can customize the output using the preferences
-	1. Shorten path to the lowest common denominator
-	2. Skip the checking of statistical package files
-	3. Recursively checking an entire tree
-		* Don't accidentally select your entire drive unless you have a lot of time on your hands
-	4. The hash type ensures that the correct checksum is used. If your data set documentation comes with checksums in sha-256 format, this is where you select that option so that you can compare
-	5. And a variety of output formats, the most common of which are plain text and csv. JSON is also available, just in case.
+The default output may not be what you want, but that's OK. Much like other applications,
+you can customize the output using the preferences window. There are a variety of options:
+
+1. Shorten the file path to the lowest common denominator
+2. Skip the checking of statistical package files; ie, don't show the number of records and cases
+3. You can recursively check an entire tree
+	* Don't accidentally select your entire drive unless you have a lot of time on your hands
+4. The hash type field is arguably the most important. If your data set comes with checksums, you will need to match the type (md5, sha256, etc) otherwise you won't be able to tell anything
+5. Lastly, there's a variety of output formats, the most common of which are plain text and csv. JSON is also available, just in case.
 
 ---
 
@@ -414,13 +416,15 @@ Printing is rudimentary, because Damage is designed to create a file to go with 
 
 # _Damage_ for **data checkers**
 
-</div>
-</section>
-
 Note:
+
 Paul
 
 We'll shift now to some examples that illustrate how _Damage_ can help with data checking workflows 
+
+</div>
+</section>
+
 
 ---
 
@@ -433,7 +437,7 @@ We'll shift now to some examples that illustrate how _Damage_ can help with data
 Note: 
 Paul
 
-* Imagine you have `some_data_set` already. Lucky you! It has an update
+* Imagine you have `some_data_set` already. Lucky you! But it's been updated from the last time you saw it.
 * Even this example is optimistic: it has version numbers!
 * How do you know what, if anything, has changed?
 
@@ -444,18 +448,23 @@ Paul
 * timestamp changes<!-- .element: class="fragment" data-fragment-index="1" -->
 * duplication of data<!-- .element: class="fragment" data-fragment-index="2" -->
 * data file corruption<!-- .element: class="fragment" data-fragment-index="3" -->
-* data verification<!-- .element: class="fragment" data-fragment-index="4" -->
-* reproducibility<!-- .element: class="fragment" data-fragment-index="5" -->
-* verifying the authenticity of dissemination<!-- .element: class="fragment" data-fragment-index="7" -->
+* reproducibility<!-- .element: class="fragment" data-fragment-index="4" -->
+* data verification<!-- .element: class="fragment" data-fragment-index="5" -->
 
 Note:
 Paul
 
-	Unfortunately, it's a rare data set that comes with perfect documentation. And even *with* perfect documentation, there can still be problems.
-	For example (the list above)
+Unfortunately, it's a rare data set that comes with perfect documentation.
 
-Damage doesn't address all of these common data checking problems, but it provides easy access to information about file contents so you can spot and investigate potential issues. 
-In many cases there won't be anything wrong at all, but even then _Damage_ can save you time by focusing your attention only on files that may have changed.
+* timestamp issues: Depending on how you downloaded the data and how it was packaged, timestamps change. They're not really a good indicator of the *contents* of files
+* duplication of data: Damage can tell you if files are identical if two checksums are identical. Sometimes that's OK, as with a bunch of shapefiles that share the same projection - the projection files will likely all be identical. Sometimes that's not OK. Maybe two files are supposed to be different but they aren't.
+* data file corruption. The file *structure* may not be what it's supposed to be.
+* reproducibility: Those wishing to reproduce the analysis of others need to have the same inputs, otherwise reproduction is impossible
+* verifying the authenticity of dissemination: Without ideal documentation, true verification may be impossible, but Damage output allows you to make informed judgements if you need to. 
+
+Damage doesn't address all of these common data checking problems, but it provides easy access to information about file contents so you can spot and investigate potential issues and make informed decisions
+
+In many (and ideally most) cases there won't be anything wrong at all, but even then _Damage_ can save you time by focusing your attention only on files that may have changed.
 
 ---
 
@@ -506,14 +515,14 @@ Take, for example, the recent DLI update to GSS Cycle 30 announced on the DLI li
 Note:
 Paul
 
-This is where the CSV and JSON outputs work ease of comparison
+Now here comes the boring technical aside. Damge has outputs for both CSV and JSON. You may ask why.
 
-* Both are easily machine readable, so it's very easy to use spreadsheets, R, Python or any other computer utility to compare file names/checksums/record lengths or whatever you need.
+* Both are easily machine readable, so it's very easy to use  R, Python or any other computer utility like a spreadsheet to compare file names/checksums/record lengths or whatever you need.
 * This helps to identify changes and errors
 * Damage can also identify encoding errors which can potentially cause problems between systems
  	* Most commonly, Windows-1252 vs UTF-8
 * This tiny code snippet just shows a python sample checking for duplicates in two JSON dictionaries
-
+* And, in the case of CSV, some people just like spreadsheets.
 ---
 
 ## I only use a terminal
@@ -604,6 +613,11 @@ Data corruption doesn't occur frequently, but it does happen sometimes.
 
 # Damage for **data distributors** 
 
+Note:
+Paul
+
+What if you're *distributing* data? Does Damage have any use?
+
 </div>
 </section>
 
@@ -614,9 +628,9 @@ Data corruption doesn't occur frequently, but it does happen sometimes.
 Note:
 Paul
 
-Everything we've just seen was carried out by a data checker, or an end-user. However, the people that originally crafted the data set almost certainly went through a similar process in the act of creating the data set.
+Everything we've just seen was carried out by a data checker, or an end-user. However, the people that originally crafted the data set almost certainly went through a similar process in the act of creating the data set itself.
 
-These days, no one works alone. If there are changes to data sets (ie, a version 2), the people distributing the data set won't necessarily be the same people who made it in the first place. A tool like Damage allows them to easily document changes internally.
+These days, hardly anyone works alone. If there are changes to data sets (ie, a version 2), the people distributing the data set won't necessarily be the same people who made it in the first place. A tool like Damage allows them to easily document changes internally.
 
 But there's more. Creating a manifest file as part of the metadata allows *everyone* to document the provenance of the contents. If manifests specific to each data set are included with the data, everyone can confirm that the downloads match the originals.
 
@@ -625,11 +639,12 @@ If there's a manifest with each version of a data release, a changelog is automa
 ---
 
 ## A proposal for consideration
-Jeremy
 
 That the Data Access Division include manifests with checksums with the data products it distributes 
 
 Note:
+
+Jeremy
 
 Data manifests with DLI data are not a new concept; they were common a few years ago and fell into disfavour.
 
