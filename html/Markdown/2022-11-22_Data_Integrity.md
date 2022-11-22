@@ -329,15 +329,15 @@ In the next few slides we'll provide an introduction to working with the _Damage
 
 ![Damage Interface](Images/2022-11-22_Data_Integrity/DamageInterface.png)<!-- .element height="70%" width="70%" -->
 
-<div style="position: fixed; left: 180px; bottom: 75px; height: 45px; width: 225px; border: 3px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=1>
+<div style="position: relative; left: 180px; bottom: 130px; height: 45px; width: 225px; border: 3px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=1>
 </div>
 
-<div style="position: fixed; left: 653px; bottom: 79px; height: 45px; width: 125px; border: 3px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=2>
+<div style="position: relative; left: 653px; bottom: 180px; height: 45px; width: 125px; border: 3px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=2>
 </div>
 
 </div>
 
-<div style="position: fixed; width: 20%; left:90%; top: 20%; text-align:left" class="fragment fade-in-then-out" data-fragment-index="1">
+<div style="position: relative; width: 20%; left: 23%; top: -500px; text-align:left" class="fragment fade-in-then-out" data-fragment-index="1">
 
 **File section**
   
@@ -345,11 +345,13 @@ Add/remove files and folders
 
 </div>
 
-<div style="position: fixed; width: 20%; left:90%; top: 20%; text-align:left" class="fragment fade-in-then-out" data-fragment-index="2">
+<div style="position: relative; width: 25%; left:55%; top: -675px; text-align:left" class="fragment fade-in-then-out" data-fragment-index="2">
 
 **Output section**
 
 Generate the manifest
+
+</div>
 
 Note:
 
@@ -360,7 +362,6 @@ Paul
 * Use the buttons to add/remove the files you want analyzed...
 * Then hit the "Generate Manifest" button
 
-</div>
 
 ---
 
@@ -497,10 +498,10 @@ Damage manifest revealed that of 47 replaced files, only 3 had changed
 
 </div>
 
-<div style="position: fixed; right: -10px; top: 210px; height: 105px; width: 220px; border: 5px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=2>
+<div style="position: relative; left: 740px; top: -286px; height: 105px; width: 220px; border: 5px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=2>
 </div>
 
-<div style="position: fixed; right: -10px; top: 315px; height: 55px; width: 220px; border: 5px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=3>
+<div style="position: relative; left: 740px;  top: -295px; height: 55px; width: 220px; border: 5px solid #FF8C00;" class="fragment fade-in-then-out" data-fragment-index=3>
 </div>
 
 Note:
