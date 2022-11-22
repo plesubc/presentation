@@ -203,14 +203,16 @@ Thanks, Sandra and Margaret, for introducing some data integrity concepts, inclu
  - Damage for data checkers<!-- .element: class="fragment fade-up" -->
  - Damage for data distributors<!-- .element: class="fragment fade-up" -->
 
-</div>
-
 Note:
 Jeremy
 
-We'll start with an introduction to the _Damage_ tool, which generates file manifests that can help verify data integrity. _Damage_ is software developed at UBC Library by Paul Lesack. It was created initially for local UBC Library needs but we believe others in the DLI community will find it useful. With that in mind, after introducing _Damage_ our presentation will draw on DLI-specific examples to show how it could help both data checkers and data distributors.
+We're going to...
 
-I want to stress that our purpose in choosing DLI examples is to make this presentation as relevant as possible to this audience. We're not making a statement about the Statistics Canada Data Access Division, whose work we are grateful for. But as anyone who works with data can attest, file integrity issues eventually come around to bite everyone. Our hope is that the _Damage_ tool can make those bites less painful and the recovery more swift.
+* Introduce the Damage tool...
+* Show how Damage can be used for end-user checking...
+* Show how Damage can be useful for data *distributors*
+
+</div>
 
 ---
 
@@ -311,13 +313,13 @@ This is not an exhaustive list of the _Damage_ manifest options but it's enough 
 
 # Introduction to the _Damage_ tool 
 
-</div>
-</section>
-
 Note:
 Paul
 
-In the next few slides we'll provide an introduction to working with the _Damage_ tool
+In the next few slides we'll provide an introduction to working with the _Damage_ tool. It's not all that hard; at least I hope it isn't.
+</div>
+</section>
+
 
 ---
 
@@ -349,13 +351,16 @@ Add/remove files and folders
 
 Generate the manifest
 
-</div>
-
 Note:
-* Fairly straightforward interface
-	* Buttons are also found in the menu
-	* Use the buttons to add/remove the files you want analyzed
-	* Then hit the "Generate Manifest" button
+
+Paul
+
+* Damage was designed to have a fairly straightforward interface. It looks like any windowed application...
+* Buttons are also found in the top menu (not shown in this Mac screenshot, but part of the window itself in Windows)...
+* Use the buttons to add/remove the files you want analyzed...
+* Then hit the "Generate Manifest" button
+
+</div>
 
 ---
 
@@ -373,7 +378,7 @@ you can customize the output using the preferences window. There are a variety o
 2. Skip the checking of statistical package files; ie, don't show the number of records and cases
 3. You can recursively check an entire tree
 	* Don't accidentally select your entire drive unless you have a lot of time on your hands
-4. The hash type field is arguably the most important. If your data set comes with checksums, you will need to match the type (md5, sha256, etc) otherwise you won't be able to tell anything
+4. The hash type field is arguably the most important. If your data set comes with checksums, you will need to match the type (md5, sha256, etc) otherwise you won't be able to tell anything. Luckily we know all about hashes at this point.
 5. Lastly, there's a variety of output formats, the most common of which are plain text and csv. JSON is also available, just in case.
 
 ---
@@ -384,7 +389,10 @@ you can customize the output using the preferences window. There are a variety o
 
 
 Note:
+
 Paul
+
+Generating a manifest is easy...
 
 * To check your files, just hit the Generate Manifest button
 * Note that this can take a while, and if you have a large file you may get a spinning beachball, some sort of windows warning, etc, while the manifest generates
@@ -399,9 +407,9 @@ Paul
 Note:
 Paul
 	
-Like every other application, you can save your work. 
+Like every other application, you can save your work...
 
-The usual hotkeys work, but you can also use the _Actions_ menu.
+The usual hotkeys work, but you can also use the _Actions_ menu. Not the _File_ menu, because that's the menu that opens files. So that's a bit weird.
 
 However, Damage is not intended to be an editor, so if you, for some reason, intend to make changes, you're probably better off opening the file in another application
 
@@ -454,7 +462,7 @@ Paul
 Note:
 Paul
 
-Unfortunately, it's a rare data set that comes with perfect documentation.
+Unfortunately, it's a rare data set that comes with perfect documentation...
 
 * timestamp issues: Depending on how you downloaded the data and how it was packaged, timestamps change. They're not really a good indicator of the *contents* of files
 * duplication of data: Damage can tell you if files are identical if two checksums are identical. Sometimes that's OK, as with a bunch of shapefiles that share the same projection - the projection files will likely all be identical. Sometimes that's not OK. Maybe two files are supposed to be different but they aren't.
@@ -498,6 +506,8 @@ Damage manifest revealed that of 47 replaced files, only 3 had changed
 Note:
 Paul
 
+...
+
 Take, for example, the recent DLI update to GSS Cycle 30 announced on the DLI list on November 8, 2022. There were no issues with the files distributed on the EFT server, but there was also nothing to indicate which files had changed...
 
 ...All the originally released files were moved to an 'Archives' directory, which is great because we can keep track of the old and new versions. In addition... 
@@ -515,7 +525,7 @@ Take, for example, the recent DLI update to GSS Cycle 30 announced on the DLI li
 Note:
 Paul
 
-Now here comes the boring technical aside. Damge has outputs for both CSV and JSON. You may ask why.
+Now here comes the boring technical aside. Damage has outputs for both CSV and JSON. You may ask why.
 
 * Both are easily machine readable, so it's very easy to use  R, Python or any other computer utility like a spreadsheet to compare file names/checksums/record lengths or whatever you need.
 * This helps to identify changes and errors
@@ -534,6 +544,7 @@ Paul
 
 Damage is also available as a command line application for Mac, Linux and Windows, so you never have to leave your safe space.
 
+[explain the command]
 
 ---
 ## Example #2: CIUS 2020
