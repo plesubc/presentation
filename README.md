@@ -3,6 +3,7 @@
 
 |Date|Title|
 |--------|-------|
+|25 October 2023|[Introduction to Data](html/2023-10-25_Intro_Data.html)|
 |22 November 2022|[Statistics Canada DLI: Data Integrity](html/2022-11-22_Data_Integrity.html)|
 |05 May 2022|[ICORD: Research Data Management](html/2022-05-05_ICORD_RDM.html)|
 |17 November 2021|[Dataverse: Alliance Panel Discussion](html/2021-11-17_DataversePanel.html)|
