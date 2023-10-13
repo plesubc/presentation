@@ -263,12 +263,213 @@ Where these things exist depends on whether they are stats or data
 ![All the things](Images/2023-10-25_Intro_Data/things.gif)<!-- .element: class="fragment" data-fragment-index="1" height="400"-->
 
 
+Note: 
+
+So what types of things do we help with?
+
+---
+## A non-exhaustive list
+Census data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Survey data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Geospatial data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Vector<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; text-indent:3em"-->
+
+Raster<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; text-indent:3em"-->
+
+Housing data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Climate data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+UBC campus data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Governmental data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Federal<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; text-indent:3em"-->
+
+Provincial<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; text-indent:3em"-->
+
+Local, including data for other countries<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; text-indent:3em"-->
+
+Textual data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Linguistic data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Public opinion<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Large data sets<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em"-->
+
+Linguistic Corpora, mostly<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; text-indent:3em"-->
+
+But not exclusively<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; text-indent:3em"-->
+
+Restricted data<!-- .element: class="fragment fade-up" style="font-size:0.5em; text-align:left; line-height:0.1em; font-weight:bold" -->
+
+
+Note:
+Expound in depth: Alternate so that one person doesn't die of exhaustion?
+
+---
+
+## The microdata
+
+Individual data points<!--.element class="fragment" -->
+
+And unless you're a savant, this requires use statistical software<!--.element class="fragment" -->
+
+<span class="fragment">
+
+* R  
+
+* SPSS  
+
+* Stata  
+
+* SAS  
+
+* Other (Python, JASP, whatever)
+
+</span>
+
+
+Note:
+
+What makes our services special is microdata
+
+Allows users to make custom analyses from "raw" data points
+
+Need statistical software like the list
+
+We (the vendor, hopefully) supply the data and the code to use with the big 3: Stata, SPSS, SAS. 
+
+While we don't offer detailed methodological support for these packages, we do have workshops (R, sometimes SPSS), consultations (student) and reference about these things
+
+---
+
+## Everyone's favourite 
+
+<span class="fragment" data-fragment-index="1">
+
+[Subject guides](https://guides.library.ubc.ca/datastatistics)
+
+</span>
+
+Note:
+
+The data subject guide was recently revamped to be current and actually helpful. A guide to microdata is planned/in progress
+ 
+---
+   
+## Analog
+
+Printed Censuses<!-- .element: class="fragment" style="text-align:left"-->
+
+Historical data<!-- .element: class="fragment" style="text-align:left"-->
+
+UN<!-- .element: class="fragment" style="text-align:left; text-indent:3em"-->
+
+League of Nations<!-- .element: class="fragment" style="text-align:left; text-indent:3em"-->
+
+Parliamentary data of various kinds<!-- .element: class="fragment" style="text-align:left; text-indent:3em"-->
+
+US data<!-- .element: class="fragment" style="text-align:left; text-indent:3em"-->
+
+The great catch all: other<!-- .element: class="fragment" style="text-align:left; text-indent:3em"-->
+
+Note:
+
+Not everything is in digital form, no matter how often people believe it must be so. We offer support to find older data in print and microform, including, but not limited to the following
+
+This is where a government publication expert also can come in handy
+
+---
+
+## Other Maggie data things that I missed, like the instructional component
+
+---
+
+## Paul Lesack
+
+
+    Data cleaning
+    offer some guidelines but we do not clean data as a general rule
+        Unless it's our vendors' data. 
+            This happens more than you might think
+                That's why they hate us
+    
+Plus we make sure that Abacus is functioning
+        Upgrade paths
+        Repairs/fixes
+        User management
+        Integration with the catalogue
+        FRDR/Geodisy
+        De facto source for Statistics Canada microdata
+            This annoys Scholars Portal
+
+    Maintain necessary data related software: R (Studio), Stata, etc
+    Maintain and build additions to Abacus and Dataverse
+        Open Index map viewer in Abacus
+        Geodisy FRDR integration standards
+        Create comprehensible metadata from poorly documented data
+        Work-arounds for terrible bugs in Dataverse
+        
+    Manage print codebook collection
+    Test server too
+
+    Data tools for librarians, UBC researchers and other libraries
+        dataverse_utils
+        dryad2dataverse
+        damage
+        Data extraction tools for DMTI for U of T
+
+    Paul provides Abacus support for SFU, UVic and UNBC.
+
+    UBC's representative to Statistics Canada
+    Real time remote access program
+    Sends angry emails
+---
+## And you'd think we'd deal with this
+#### But we don't<!--.element class="fragment"--> 
+
+<span class="fragment">
+    
+* Health data (ie, medical research data, genetic data, etc)
+
+* Pure science (chemistry, biology, astronomy, etc)
+
+</span>
 ---
 
 
+## The massive overlap component
+
+Government Publications (Susan Paterson)  
+GIS (Alex/Paul)  
+RDM (Eugene/Paul)  
+Digital Scholarship (Eka)  
+Economics and Finance (David Lam)  
+Internal data (Jeremy/Meghan)  
+
+Note:
+
+As everyone knows, data isn't a neatly categorized thing. The data group also works with these other groups as applicable, some more than others.
+
+---
+
+## Some questions we get asked
+
+Note:
+
+Add questions here
+
+
+---
+
 # IN CONCLUSION
 
-We are all doomed<!-- .element: class="fragment" data-fragment-index="1" -->
+We are all doomed<!-- .element: class="fragment" -->
 
 Note:
 
@@ -280,17 +481,17 @@ We are probably not doomed. It's hard to say.
 
 <div style="text-align: left;">
 
-<span class="fragment" data-fragment-index="1">
+<span class="fragment" >
 
 * This presentation: <https://plesubc.github.io/presentation/html/2023-10-25_Intro_Data.html>
 
 </span>
-<span class="fragment" data-fragment-index="2">
+<span class="fragment" >
 
 * /dev/null
 
 </span>
-<span class="fragment" data-fragment-index="3">
+<span class="fragment" >
 <br />
 
 * Paul Lesack, _Data/GIS Analyst_ : [paul.lesack@ubc.ca](https://directory.library.ubc.ca/people/view/182)
@@ -300,7 +501,7 @@ We are probably not doomed. It's hard to say.
 * Jeremy Buhler, _Data Librarian_ : [jeremy.buhler@ubc.ca](https://directory.library.ubc.ca/people/view/853)
 </span>
 
-<span class="fragment" data-fragment-index="4">
+<span class="fragment" >
 
 * Milan Simić, _Humanities & Social Sciences Librarian (Data)_ : [milan.simic@ubc.ca](https://directory.library.ubc.ca/people/view/1408)
 
