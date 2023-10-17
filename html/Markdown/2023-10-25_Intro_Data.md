@@ -364,7 +364,7 @@ The data subject guide was recently revamped to be current and actually helpful.
    
 ## Analog
 
-Printed Censuses<!-- .element: class="fragment" style="text-align:left"-->
+Printed censuses<!-- .element: class="fragment" style="text-align:left"-->
 
 Historical data<!-- .element: class="fragment" style="text-align:left"-->
 
@@ -392,56 +392,210 @@ This is where a government publication expert also can come in handy
 
 ## Paul Lesack
 
+Note:
 
-    Data cleaning
-    offer some guidelines but we do not clean data as a general rule
-        Unless it's our vendors' data. 
-            This happens more than you might think
-                That's why they hate us
-    
-Plus we make sure that Abacus is functioning
-        Upgrade paths
-        Repairs/fixes
-        User management
-        Integration with the catalogue
-        FRDR/Geodisy
-        De facto source for Statistics Canada microdata
-            This annoys Scholars Portal
+As mentioned before, Paul also does many/all of these things, but there's also more
 
-    Maintain necessary data related software: R (Studio), Stata, etc
-    Maintain and build additions to Abacus and Dataverse
-        Open Index map viewer in Abacus
-        Geodisy FRDR integration standards
-        Create comprehensible metadata from poorly documented data
-        Work-arounds for terrible bugs in Dataverse
-        
-    Manage print codebook collection
-    Test server too
-
-    Data tools for librarians, UBC researchers and other libraries
-        dataverse_utils
-        dryad2dataverse
-        damage
-        Data extraction tools for DMTI for U of T
-
-    Paul provides Abacus support for SFU, UVic and UNBC.
-
-    UBC's representative to Statistics Canada
-    Real time remote access program
-    Sends angry emails
 ---
+### Abacus<!-- .element: class="fragment" -->
+<https://abacus.library.ubc.ca><!-- .element: class="fragment" -->
+
+Note:
+
+If you have never heard of Abacus you should bookmark it now
+
+Paul maintains and runs Abacus, which holds more than 2400 data sets
+
+A shared repository for UBC, UNBC, UVic, SFU and because a lot of statcan data is in there, Canada and the world
+
+Fed to FRDR
+
+De facto source for Statistics Canada microdata
+
+This annoys Scholars Portal
+
+---
+    
+## What about Abacus?
+
+---
+
+## The data and metadata
+
+Note:
+
+Paul adds the overwhelming majority of content 
+
+Create comprehensible metadata from poorly documented data
+
+As a result, probably has the best knowledge of what is *in* abacus
+
+This includes all the other institutions as well
+
+Also structures the data so it's not a godawful mess (looking at you statcan)
+
+---
+
+# The service itself 
+
+<span class="fragment" style="text-align:left">
+
+* User management
+
+* Integration with the catalogue
+ 
+* FRDR/Geodisy integration
+ 
+* Upgrade paths
+ 
+* Repairs/fixes
+
+</span>
+
+Note:
+
+An example: Open Index map viewer in Abacus
+
+Or: Github integration for open index maps
+
+Work-arounds for terrible bugs in Dataverse
+
+**Paul can usually fix the server if the service is down**
+
+---
+
+# Dealing with vendors
+
+Note:
+
+The official representative for Statistics Canada. Note that Jeremy works with ICPSR
+
+Insert story about how the DLI works
+
+* Answers questions for data librarians in Canada
+
+* Gives statcan tips on how to clean their terrible data
+
+* Obtaining data from other vendors (like governments or private corporations)
+
+---
+
+## Specialized data set support
+
+<span class="fragment" style="text-align:left">
+
+* Terrain Resource Information Management data
+* BC Assessment Data
+* etc
+
+</span>
+
+Note:
+
+Not all data is immediately available for download from Abacus
+
+Some are a mediated service, or are restricted, or have another special needs
+
+---
+
+## Custom product support
+
+<span class="fragment" style="text-align:left">
+
+* Custom tabulations
+
+* Real-time Remote Access (RTRA) Program
+
+</span>
+
+Note: 
+
+Some services require cooperation with vendors (custom tabs), or special acounts technical expertise, like SAS for RTRA. 
+
+Explain these services
+
+---
+
+
+## Plays with others 
+
+Data tools for librarians, UBC researchers and other libraries
+
+<span class="fragment" style="text-align:left">
+
+* [dataverse_utils](https://ubc-library-rc.github.io/dataverse_utils)
+* [dryad2dataverse](https://ubc-library-rc.github.io/dryad2dataverse)
+* [damage](https://ubc-library-rc.github.io/fcheck/)
+* Geospatial data extraction tools used by U of T/ Scholars Portal
+
+<span>
+
+Note:
+There's more, but you get the idea
+
+---
+
+## Print
+
+Note:
+
+In theory, Paul catalogues the Koerner Data Codebooks print collection.
+
+Print materials do not arrive frequently, but if you're looking for something in print you know who to ask
+
+
+---
+
+
+## WHEN TO COME TO US
+
+<span class="fragment" style="text-align:left">
+
+* Someone is searching for "data"
+* There is a need for a specialized workshop
+* ECON 490
+* Microdata support
+* Historical statistics
+* Custom tabulations
+* Issues with Abacus
+* Statistical software problems
+* Data purchases
+* Data gifts/donations
+
+</span>
+
+Note:
+
+"Data" in this case is usually governmental or commercial data sets
+
+Econ 490 is a *microdata* course and they almost always need data from Abacus
+
+Statistical software is one of those grey areas. We don't offer methodological support, but we can help with a lot of other issues. If you're note sure, refer to us and we can pass patrons on if required. I am not a statistician.
+
+---
+
 ## And you'd think we'd deal with this
-#### But we don't<!--.element class="fragment"--> 
+#### But we (generally) don't<!--.element class="fragment"--> 
 
 <span class="fragment">
     
-* Health data (ie, medical research data, genetic data, etc)
+* Pure health data (ie, medical research data, genetic data, etc)
 
-* Pure science (chemistry, biology, astronomy, etc)
+* Pure science data (chemistry, biology, astronomy, etc)
+
 
 </span>
 ---
 
+## Sample questions
+
+* I need to figure out how to extract something from 600 files
+* "In this file, there are four factors considered for Material deprivation, but I see that the research papers only show one score for Material deprivation. I would like to learn how I should use the Stat Can table. Should I just average out the scores for all four factors and report the average score as Material Deprivation?"
+* Historical population changes in Spences Bridge BC from the 19th century onwards
+* Interpreting the structure of multiple years of the Canadian Community Health Survey
+* The Statistics Canada Index of Remoteness and how to apply to differing census areas
+* Abacus is down
+---
 
 ## The massive overlap component
 
@@ -455,15 +609,6 @@ Internal data (Jeremy/Meghan)
 Note:
 
 As everyone knows, data isn't a neatly categorized thing. The data group also works with these other groups as applicable, some more than others.
-
----
-
-## Some questions we get asked
-
-Note:
-
-Add questions here
-
 
 ---
 
