@@ -388,6 +388,64 @@ This is where a government publication expert also can come in handy
 
 ## Other Maggie data things that I missed, like the instructional component
 
+Note:
+
+Maggie is responsible for most of the reference and instructional stuff. Jeremy probably normally does a lot more than this. I am only working part-time while he is away and don't have his full responsibilities.
+
+---
+
+## Providing Reference Help
+
+Research consultation<!-- .element: class="fragment" style="text-align:left"-->
+
+Finding and accessing data<!-- .element: class="fragment" style="text-align:left"-->
+
+Statistics Canada<!-- .element: class="fragment fade-down" style="font-size:0.8em; text-align:left; line-height:0.5em; text-indent:3em"-->
+
+BC Assessment<!-- .element: class="fragment fade-down" style="font-size:0.8em; text-align:left; line-height:0.5em; text-indent:3em"-->
+
+Microdata<!-- .element: class="fragment fade-down" style="font-size:0.8em; text-align:left; line-height:0.5em; text-indent:3em"-->
+
+International data<!-- .element: class="fragment fade-down" style="font-size:0.8em; text-align:left; line-height:0.5em; text-indent:3em"-->
+
+Note:
+
+Maggie helps answer reference questions, allegedley
+
+Pointing out where to go to look for data and helping access data. If it is GIS related, then Paul usually does it
+
+Primarily assisting with data available from Statistics Canada, but also includes things like the BC Assessment data (which has pretty strict terms of use so researchers are required to meet with me/Paul before they get access), microdata, US/international data
+
+---
+
+## Instruction
+
+Classroom sessions<!-- .element: class="fragment" style="text-align:left"-->
+
+Digital learning resources<!-- .element: class="fragment" style="text-align:left"-->
+
+Workshops<!-- .element: class="fragment" style="text-align:left"-->
+
+Note:
+
+I am available to do classroom sessions on data literacy and access, the data available at UBC and the resources the research commons and data librarian offers for interacting with data
+
+I am accumulating as many digital learning resources relating to data as I can, both for myself and for anyone I may be helping with a reference question
+
+I can also help with supporting workshops, if that is needed at any point
+
+---
+
+## Other things
+
+Updating the LibGuide<!-- .element: class="fragment" style="text-align:left"-->
+
+Assisting with the maintenance of Abacus data<!-- .element: class="fragment" style="text-align:left"-->
+
+Note:
+
+Come up with a better heading for this
+
 ---
 
 ## Paul Lesack
