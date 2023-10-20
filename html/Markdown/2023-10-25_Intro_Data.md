@@ -348,7 +348,7 @@ While we don't offer detailed methodological support for these packages, we do h
 
 ---
 
-## Everyone's favourite 
+## Everyone's favourite
 
 <span class="fragment" data-fragment-index="1">
 
@@ -357,6 +357,8 @@ While we don't offer detailed methodological support for these packages, we do h
 </span>
 
 Note:
+
+Maggie - show the guide in the browser and talk a bit about the changes (new Stats Canada page, highlight data/statistics sources page)
 
 The data subject guide was recently revamped to be current and actually helpful. A guide to microdata is planned/in progress
  
@@ -386,7 +388,7 @@ This is where a government publication expert also can come in handy
 
 ---
 
-## Other Maggie data things that I missed, like the instructional component
+## Maggie's duties
 
 Note:
 
@@ -420,11 +422,11 @@ Primarily assisting with data available from Statistics Canada, but also include
 
 ## Instruction
 
-Classroom sessions<!-- .element: class="fragment" style="text-align:left"-->
+Classroom sessions<!-- .element: class="fragment"-->
 
-Digital learning resources<!-- .element: class="fragment" style="text-align:left"-->
+Digital learning resources<!-- .element: class="fragment"-->
 
-Workshops<!-- .element: class="fragment" style="text-align:left"-->
+Workshops<!-- .element: class="fragment"-->
 
 Note:
 
@@ -432,19 +434,21 @@ I am available to do classroom sessions on data literacy and access, the data av
 
 I am accumulating as many digital learning resources relating to data as I can, both for myself and for anyone I may be helping with a reference question
 
-I can also help with supporting workshops, if that is needed at any point
+I can also help with supporting workshops, if that is needed at any point - Sarah Parker is currently leading the Data GAAs and workshops
 
 ---
 
-## Other things
+## Miscellany
 
-Updating the LibGuide<!-- .element: class="fragment" style="text-align:left"-->
+Updating the LibGuide<!-- .element: class="fragment"-->
 
-Assisting with the maintenance of Abacus data<!-- .element: class="fragment" style="text-align:left"-->
+Assisting with the maintenance of Abacus data<!-- .element: class="fragment"-->
+
+Keeping an eye out for additional data to acquire<!-- .element: class="fragment"-->
 
 Note:
 
-Come up with a better heading for this
+
 
 ---
 
@@ -640,6 +644,8 @@ Statistical software is one of those grey areas. We don't offer methodological s
 * Pure health data (ie, medical research data, genetic data, etc)
 
 * Pure science data (chemistry, biology, astronomy, etc)
+
+* Research Data Management (Eugene will talk about this soon!)
 
 
 </span>
