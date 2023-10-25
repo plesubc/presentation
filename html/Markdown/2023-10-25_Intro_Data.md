@@ -191,7 +191,7 @@ Right now we are still figuring things out
 
 ## Sarah Parker
 
-And also a student whose name I can't remember<!-- .element: class="fragment" data-fragment-index="1" -->
+And also a student: Siobhan Schenk<!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
 
