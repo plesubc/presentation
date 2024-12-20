@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>The utility of dataverse_utils</title>
+
+		<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="custom/ubc-no-logo.css">
+		<!--<link rel="stylesheet" href="custom/ubc-modified.css">-->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+        <style>
+			.yellow {
+				color: #FF8C00 /* previously #FFA500; */
+			}
+
+			.smaller {
+				font-size: smaller;
+			}
+			.larger {
+				font-size: larger;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+			<section data-markdown="./Markdown/2025-01-13_Census_Data.md" 
+			 data-background-image="Images/RC_UBC_background.png"
+			 data-background-position="auto 100%"
+		         data-charset="utf-8"
+			 data-separator="^---"
+			 data-separator-notes="^Note:">
+			</section>
+			</div>
+		</div>
+
+		<script src="../reveal.js/dist/reveal.js"></script>
+		<script src="../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				center: false,
+				//transition: 'zoom',
+				//parallaxBackgroundImage: './Images/RC_UBC_Background.png',
+				//parallaxBackgroundSize: '1920px 1080px',
+				//parallaxBackgroundHorizontal: 400,
+				//parallaxBackgroundVertical: 50,
+							
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			//printing pdf
+			//Reveal.configure({ showNotes: true });
+			//Reveal.configure({ pdfSeparateFragments: false });
+			//Reveal.configure({ pdfMaxPagesPerSlide: 1 });
+			//Reveal.configure({ showNotes: 'separate-page' });
+		</script>
+		<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	</body>
+</html>
