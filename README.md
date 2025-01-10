@@ -3,7 +3,7 @@
 
 |Date|Title|
 |--------|-------|
-|13 January 2025|[Statcan GIS](html/2025-01-13_Census_Data.html)|
+|20 January 2025|[Statcan GIS](html/2025-01-20_Census_Data.html)|
 |20 June 2024| [Dataverse Utilities](html/2024-06-20_dataverse_utils_sp.html)|
 |25 October 2023|[Introduction to Data](html/2023-10-25_Intro_Data.html)|
 |22 November 2022|[Statistics Canada DLI: Data Integrity](html/2022-11-22_Data_Integrity.html)|
