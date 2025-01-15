@@ -3,6 +3,11 @@
 ## Canada Census Data 
 \
 \
+
+Alex Alisauskas, GIS Librarian\
+UBC Library — Koerner\
+[alexandra.alisauskas@ubc.ca](mailto:alexandra.alisauskas@ubc.ca)<!-- .element: class="smaller" --> 
+
 Jeremy Buhler, Data Librarian\
 UBC Library Research Commons\
 [jeremy.buhler@ubc.ca](mailto:jeremy.buhler@ubc.ca)<!-- .element: class="smaller" --> 
@@ -270,6 +275,72 @@ __REMOVE THESE SimplyAnalytics slides?__
 3. Click _Export_ to download as Excel or CSV file
 
 ---
+
+## DMTI Spatial
+
+* Infrastructure
+* Land use/landcover
+* Vector contours
+* Postal codes at the Forward Sortation Area level (six digit postal codes)
+* <https://abacus.library.ubc.ca/dataverse/dmti>
+
+
+Note:
+
+* Not all of our resources are from governmental sources
+* DMTI Spatial is a [reputable] private company which contains frequently requested geospatial data
+* 400+ layers on over 20 different subjects
+
+---
+
+## Why use DMTI
+
+* Easy
+* Historical
+* Broad coverage
+
+Note:
+
+* Ease of use; all data is from the same source
+* Yearly updates, so it's possible to look for a *specific* year
+* DMTI covers all of Canada, so if the area of interest falls outside of BC, it's still possible to get data
+* All data is available in the form of shapefiles
+* Some years have network data available (for routing)
+    * all years *can* be made into a network data set
+* Also contains census data in case you don't feel like downloading it from Statistics Canada
+
+---
+
+## Why *not* to use DMTI
+
+* Data is *not* shareable
+* Academic use only
+
+Note:
+
+* Unlike Statcan data, DMTI data is *not* public. This means:
+    * A login is required to use it
+    * Data can not be shared with others who do not also have access (ie, outside of UBC)
+    * Academic use only
+* For academic purposes, though, it's super useful
+
+---
+
+## Open Street Map
+
+Can get many types of data quickly
+
+* QGIS: [Quick OSM plugin](https://plugins.qgis.org/plugins/QuickOSM/)
+* ArcGIS: [OSMQuery](https://github.com/riccardoklinger/OSMquery)
+
+Note:
+
+* Both of these allow importation of **selected** data from Open streetmap
+* Key/Values: <https://wiki.openstreetmap.org/wiki/Map_features>
+
+---
+
+
 
 
 
