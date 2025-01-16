@@ -340,10 +340,60 @@ Note:
 
 ---
 
+## Spatial Visualizations: Choropleth Maps
 
+- Coloured or shaded area on a map represents relative rates or intensities across space
+- Easy to create and interpret; great for showing data at a quick glance
+- Data represented needs to be linked to an enumeration area and standardized as a rate or ratio
+- Not appropriate for continuous data, or any data not representing an area (i.e. data assigned to a specific point)
+- Need to use data classification scheme; 4-7 classes are preferred
 
+![choroplethmap](./Images/2025-01-20_Census_Data/choropleth1.jpeg)
+Tips on data classification, color ramps etc here: [Choropleth Maps by Uli Ingram](https://alg.manifoldapp.org/read/introduction-to-cartography/section/c3c06272-8b8b-49e7-a957-da0d06550b73#3-part-1)
 
+---
 
+## Spatial Visualizations: Graduated or Proportional Symbol Maps
+
+- Good alternative to choropleths for visualizing quantities and raw counts
+- Represent data through differently sized symbols
+     - Graduated symbol uses data classes
+     - Proportional does not use data classes; symbol proportional to corresponding data value
+- Data used should be total values, percentage values or rate values and should occur at a point
+- Not apprporpriate for density data, interval data or data with small ranges of value
+
+![graduatedsymbolmap](./Images/2025-01-20_Census_Data/graduated_symbol.png)
+![proportionalsymbolmap](./Images/2025-01-20_Census_Data/proportional_symbol.png)
+Read more: [ArcGIS Proportional Symbols Guide](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/proportional-symbology.htm)
+Read more: [ArcGIS Graduated Symbols Guide](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/graduated-symbols.htm)
+
+---
+
+## Spatial Visualizations: Heat Maps
+
+- Represents the density of data points across a geographic area through a continuous colour ramp
+- Make it easy to understand overall trends in point data by highlighting areas of high or low density
+- Good alternative to point maps where clusters might affect legibility; also does not use geographical boundaries to group data
+- Good for overall trends rather than accurate numerical analysis
+
+![heatmap](./Images/2025-01-20_Census_Data/heatmap.jpeg)
+Read more: [Dot Density Maps by Uli Ingram](https://alg.manifoldapp.org/read/introduction-to-cartography/section/c3c06272-8b8b-49e7-a957-da0d06550b73#3-part-1)
+
+---
+
+## Spatial Visualizations: Dot Density Maps
+
+- Represents density of data points across a geographic area through randomly placed dots (vs. dot size in previous maps)
+     - One-to-one dot density = one dot represents one object or count
+     - One-to-many dot density = one dot stands for a number of things/values
+- Data used should be total values; should be represented and aggregated to an enumeration area
+- Good for displaying a variable's overall geographic pattern and density more accurately; can convey magnitude of more than one group
+- Not great for retrieving rates or numbers from the map and may also lead readers to infer dot locations as precise locations of what's being mapped
+
+![dotdensity](./Images/2025-01-20_Census_Data/dot_density.png)
+Read More:[ArcGIS Dot Density Guide](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/dot-density.htm)
+
+---
 
 <!-- .slide: data-background="lightblue" style="font-size: 0.7em;" -->
 ## Selected resources 
