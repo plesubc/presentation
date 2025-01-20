@@ -1,22 +1,12 @@
-<!-- .slide: data-background="darkseagreen" -->
-
-## Canada Census Data 
-\
-\
-
-Alex Alisauskas, GIS Librarian\
-UBC Library — Koerner\
-[alexandra.alisauskas@ubc.ca](mailto:alexandra.alisauskas@ubc.ca)<!-- .element: class="smaller" --> 
+## Mapping Census of Canada Data
+<br/>
+<br/>
 
 Jeremy Buhler, Data Librarian\
-UBC Library Research Commons\
 [jeremy.buhler@ubc.ca](mailto:jeremy.buhler@ubc.ca)<!-- .element: class="smaller" --> 
 
 Paul Lesack, Data & GIS Analyst\
-UBC Library Research Commons\
 [paul.lesack@ubc.ca](mailto:paul.lesack@ubc.ca)<!-- .element: class="smaller" --> 
-
-__Are we all presenting?__
 
 Note: 
 
@@ -24,25 +14,17 @@ Note:
 
 ## Learning objectives  
 
-- Understand how Census data is released
-- Select appropriate Census geographies
-- Know how to download Census data
+- Understand how Census data is collected and released <!-- .element: class="fragment" -->
+- Find and download Census data and boundary files <!-- .element: class="fragment" -->
+- Learn about supporting data and tools (e.g. CanMap Content Suite) <!-- .element: class="fragment" -->
+- Distinguish among map types <!-- .element: class="fragment" -->
 
 Note: This session is an overview and doesn't allow time for hands-on discovery. It will introduce you to terms and resources that should help you navigate Statistics Canada Census resources. If you have further questions please contact us for individual support.  
 
----
-
-## Assumptions for this class
-
-- Goal is to understand and access *Census* data
-- Emphasis is on using the data for mapping
-- Other useful resources (e.g. DMTI) are listed but not demonstrated
-
-Note: given the relatively short time and the emphasis on Census of Canada data, we are not covering other resources that are may be useful, such as the SimplyAnalytics platform or the DMTI CanMap Content suite. We'll briefly mention them, however, so you're aware that these additional resources can enhance your work and may be worth exploring.
+The presentation will introduce you to a couple of places where you can find Census Data to use for mapping. Please bear in mind this is just an orientation to get you started - depending on your goals there may be other Census products better suited to your needs. If you have questions about finding data of any kind (not just Census), please contact us at UBC Library.
 
 Possibly ask students for show of hands, to prompt engagement and gauge class level (could be different questions)
-	- who has prior experience working with Census data? 
-    - who has experience with DMTI's CanMap Content suite? 
+- who has prior experience working with Census data? 
 
 ---
 
@@ -50,35 +32,53 @@ Possibly ask students for show of hands, to prompt engagement and gauge class le
 
 - Collected every 5 years (2016, 2021, 2026...)
 - Mandated by law
-- _Short form_ (100%) and _long form_ (25%) 
-
-See [Statistics Canada page about the Census](https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3901)
+- _Short form_ (100%) and _long form_ (25%) [questionnaires](https://www12.statcan.gc.ca/census-recensement/2021/ref/98-304/2021001/chap5-eng.cfm) 
 
 
-Note: (selections from info page: "The Census of Population is the primary source of socioeconomic data for specific population groups and for detailed or small geographies. The Census of Population is mandated by law in the Constitution Act (1867) and the Statistics Act (1985) to determine the population of Canada and its' provinces and territories, every five years."
+Note: From StatCan info page: "The Census of Population is the primary source of socioeconomic data for specific population groups and for detailed or small geographies. The Census of Population is mandated by law in the Constitution Act (1867) and the Statistics Act (1985) to determine the population of Canada and its' provinces and territories, every five years."
 
 "The data are needed by both the public and private sectors to support decision-making, like planning community services (e.g., schools and emergency services) or determining consumer and market demand in all parts of the country."
 
-Depending on area of study, it's important to know that even the short form misses some people (e.g. homeless not in a shelter; some first nations groups that no not allow enumerators into territory)
 
 
 ---
 
-## Long form questionnaire
+## Does the Census count everyone?
 
-List examples of topics/questions that ONLY appear on long form. Could include link to (or image of) long form questionnaire.
+- Only counts homeless people if in a shelter <!-- .element: class="fragment" data-fragment-index="1"  -->
+- Incompletely enumerated reserves and settlements <!-- .element: class="fragment" data-fragment-index="2" -->
 
-Mention 'Household survey' for those doing historical work.
 
-Note: The long form questionnaire asks more detailed questions.
+<https://www12.statcan.gc.ca/census-recensement/2021/ref/iers-repd-eng.cfm> <!-- .element: class="fragment" data-fragment-index="2" -->
+ 
+
+Note: Depending on your area of research, it's important to know that even the short form questionnaire misses some people, even though it goes to 100% of households. Here are two examples: homeless people, for example, are only counted if they're stay in a shelter when the count happens. And there are also indigenous reserves and settlements that are counted only partially, if at all. The link on this slide is to a table showing these areas. Some are not counted because the indigenous band council did not give permission to enter its territory. In other cases access may not have been possible (e.g. forest fires) or safe from a health perspective (e.g. COVID 19) 
 
 
 ---
-<!-- .slide: data-background="lightblue" -->
+
+## Census Documentation
+
+- Guides
+- Dictionary
+- Questionnaires
+
+<br/>
+<br/>
+
+See [Reference Materials, 2021 Census](https://www12.statcan.gc.ca/census-recensement/2021/ref/index-eng.cfm)
+
+---
+
 ## How Census data is released
 
-- Aggregated data <!-- .element: class="fragment" -->
-- Public Use Microdata File (PUMF) <!-- .element: class="fragment" -->
+- Aggregated data 
+	- Published tables
+	- Census profiles
+- Public Use Microdata File (PUMF) <!-- .element: class="fragment" data-fragment-index="1" -->
+	- Case-level data <!-- .element: class="fragment" data-fragment-index="1" -->
+	- Some variables suppressed/aggregated<!-- .element: class="fragment" data-fragment-index="1" -->
+	- Limited geographic detail<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
 Note: **Aggregated data**, also referred to as statistics, is data that someone has already done some grouping or calculations on. Examples from the Census could include the population count for each neighbourhood in vancouver, the average income for a region, and so on. If aggregated data is already avaialble for the topic that interests you, this is usually the most efficient route. However, for some research projects aggregated data might not be available... in those cases you might want to look for...
@@ -90,20 +90,7 @@ We'll focus on Aggregated data, but the 'resources' slide has links to Public Us
 
 ---
 
-## Aggregated Census data
-
-- Published tables
-- Census profiles 
-- Third-party vendors (e.g. SimplyAnalytics) __Should we drop this?__
-
-
-Note: These are three sources of aggregated data that we'll look at today. 
-
-
----
-
-
-<!-- .slide: data-background="lightblue" style="font-size:0.8em" data-transition="slide-in fade-out" -->
+<!-- .slide: style="font-size:0.8em" data-transition="slide-in fade-out" -->
 ## Census geographic levels
 
 - Census division<!-- .element: class="fragment semi-fade-out" data-fragment-index="1" -->
@@ -114,7 +101,7 @@ Note: These are three sources of aggregated data that we'll look at today.
 - Dissemination area
 - Dissemination block<!-- .element: class="fragment semi-fade-out" data-fragment-index="1" -->
 
-_<https://www150.statcan.gc.ca/n1/pub/92-195-x/92-195-x2021001-eng.htm>_ <!-- .element: class="small" -->
+_<https://www150.statcan.gc.ca/n1/pub/92-195-x/92-195-x2021001-eng.htm>_ 
 
 Note: This is a partial list of the geographic areas referred to on Statistics Canada Census pages and in other StatCan products. The source, linked at the bottom of the slide, includes descriptions of each of the areas. For this clas I'm going to illustrate four frequently used Census geograpies. (Highlight, read 4). We'll look at each of these using Greater Vancouver as our example.
 
@@ -161,118 +148,79 @@ Note: The Census tract breaks the area down into smaller chunks
 ![DA example](./Images/2025-01-20_Census_Data/geog_DA.png)
 
 
-Note: The Dissemination area breaks the area down into smaller chunks. In the Vancouver CMA there are more than 500 dissemination areas.
+Note: The Dissemination area breaks the area down into smaller chunks. 
 
 
 ---
 
+<!-- .slide:  style="font-size:smaller"-->
 
-<!-- .slide: data-background="lightblue" style="font-size:smaller"-->
+_Tour of Census Profiles on Statistics Canada website_  
 
-Tour of Census resources on Statistics Canada website  
-(_see slide notes for details_)
+<https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm>
 
 Note:
 - Statcan page ->
 - Census of population page (Census Data, Census Geography, Census Profile ->
 - Census profile, search for Vancouver, choose CMA ->
 - Show 'add a geography', show 'add/remove' as way to see scope
-- Scroll down to 'household' section
+- Scroll down to 'age' section, 100% enumration
+- Use 'add/remove' to show only 'Ethnocultural... -> Visible Minority'
+	- show that it's only 25% (selected b/c included in lab file)
 - Discuss download options
 	- if table has the area you need, download 'as displayed intable'
 	- if need data for many areas, click 'Comprehensive Download Files'
-		- Go to Census profile for DA data (Vancouver CMA)
-		- Census profile download (Comprehensive download at DA level, BC)
-		- File is 3.4GB and almost 23M rows
-		- Next slide
+		- filter to 'census tract' but do not download
+		- File is 2.5GB and more than 16M rows
+
+---
+<!-- .slide: data-transition="slide-in none-out" -->
+#### Census profile download: **long** format
+
+![Comprehensive download file](./Images/2025-01-20_Census_Data/profile_download.png)
 
 ---
 
-#### Geographic attribute file + profile download
+<!-- .slide: data-transition="none-in slide-out" -->
+#### Reformatted profile data: **wide** format
 
-
-![Geographic attribute file](./Images/2025-01-20_Census_Data/geo_attribute.png) <!-- .element: class="fragment" -->
-![Comprehensive download file](./Images/2025-01-20_Census_Data/profile_download.png) <!-- .element: class="fragment" -->
+![Reformatted profile data](./Images/2025-01-20_Census_Data/reformatted_profile.png)
 
 ---
 
-<!-- .slide: data-background="lightblue" style="font-size:smaller"-->
+<!-- .slide:  style="font-size:smaller"-->
 
-__REMOVE ALL SIMPLY ANALYTICS CONTENT?__
+_Download Census 2021 Cargotraphic Boundary File (as shapefile)_
 
-Tour of Census Housing data on SimplyAnalytics  
-(_see notes for details_)
+<https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/index-eng.cfm>
 
+Note: 
+- From Census main page, click "Census Geography"
+- Click "Spatial information products"
+- Scroll down, show "Reference", then click "Boundary files"
+- Choose 2021, then select: 
+	- Cartographic Boundary File
+	- Statistical Boundaries -> Census Tracts
+	- Format = Shapefile
+
+---
+
+
+<!-- .slide:  style="font-size:smaller"-->
+
+_Tour of SimplyAnalytics (for map-ready data)_
+
+<https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044>
 
 Note:
 - Open project for Canada, Vancouver CMA ->
 - Leave default variables ->
 - Show drop-down menus at top, go to CT, Zoom in to show DA change ->
-- Remind that aggregator. Add variable by 'data folder' ->
+- Add variable by 'data folder' ->
 - Choose Census ->
 - Choose 'occupied private dwellings by tenure', show ownership percentage ->
 - Add to map ->
 - Export ranking table by DA
-
-
----
-
-<!-- .slide: style="font-size:0.7em"-->
-## Census profile download
-
-1. From the [Census profile](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm>) page, select the desired location
-
-2. Click _Download_ button (top right)
-
-3. Select Download type
-\
-![Census profile download options](./Images/2025-01-20_Census_Data/profile_download_2.png)
-
-Use _Comprehensive download files_ to download data for more than five locations (select file with desired geographic level)
-
-
----
-
-
-<!-- .slide: style="font-size:0.7em"-->
-## Geographic attribute file
-
-1. On the [Census geography](https://www12.statcan.gc.ca/census-recensement/2021/geo/index-eng.cfm) page click _Attribute information products_
-
-2. Select _Geographic Attribute File_
-
-3. Select a Census year and click _Continue_ to download
-
----
-
-<!-- .slide: style="font-size:0.7em"-->
-## SimplyAnalytics: tips
-
-__REMOVE THESE SimplyAnalytics slides?__
-
-- Use drop-down menus above the map to change:
-	- data shown in the map
-	- geographic level (e.g. Census Tract, Census subdivision)
-
-- Add data on the left (select _data folder_ to browse Census)
-\
-![SimplyAnalytics data folder](./Images/2025-01-20_Census_Data/simply_analytics_data.png)
-
-
-
----
-
-<!-- .slide: style="font-size:0.7em"-->
-## SimplyAnalytics: download table 
-
-1. In the right panel click _Ranking_ to display as table
-\
-![SimplyAnalytics ranking table](./Images/2025-01-20_Census_Data/simply_analytics_ranking.png)
-2. Use drop-down menu above the table to change:
-	- geographic level
-	- number of geographies to display
-
-3. Click _Export_ to download as Excel or CSV file
 
 ---
 
