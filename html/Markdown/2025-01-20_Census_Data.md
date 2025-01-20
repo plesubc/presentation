@@ -8,6 +8,9 @@ Jeremy Buhler, Data Librarian\
 Paul Lesack, Data & GIS Analyst\
 [paul.lesack@ubc.ca](mailto:paul.lesack@ubc.ca)<!-- .element: class="smaller" --> 
 
+<https://plesubc.github.io/presentation/html/2025-01-20_Census_Data.html> <!-- .element: class="smaller" -->
+
+
 Note: 
 
 ---
@@ -185,6 +188,26 @@ Note:
 #### Reformatted profile data: **wide** format
 
 ![Reformatted profile data](./Images/2025-01-20_Census_Data/reformatted_profile.png)
+
+---
+
+<!-- .slide:  style="font-size:smaller"-->
+### For reference: data reshaping strategies
+
+- Download IVT file and reshape in _Beyond 20/20 Professional Browser_
+	- Requires Windows
+	- Available on UBC Library [remote workstations](https://remotelabs.ubc.ca/#group-1028-data)
+	- UBC Library guide available [here](https://wiki.ubc.ca/Library:Beyond_20/20_Guide)
+<br/><br/>
+- Download CSV and reshape with Python, R, etc.
+	- Some files may be too large to open in Excel
+<br/><br/>
+- Download from SimplyAnalytics platform
+	- Available from UBC Library [here](https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044)
+	- Flexible export options, but only 5 users at a time
+	- Data from multiple sources (not only Census)
+
+
 
 ---
 
@@ -368,7 +391,7 @@ Note:
 
 ---
 
-<!-- .slide: data-background="lightblue" style="font-size: 0.7em;" -->
+<!-- .slide: style="font-size: 0.7em;" -->
 ## Selected resources 
 
 - [Census of Population](https://www12.statcan.gc.ca/census-recensement/index-eng.cfm) main page 
@@ -377,6 +400,8 @@ Note:
 - [Geographic Attribute File](https://www12.statcan.gc.ca/census-recensement/2021/geo/aip-pia/attribute-attribs/index-eng.cfm) 
 - [SimplyAnalytics](https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044) UBC login page 
 - [2021 Census PUMF](https://hdl.handle.net/11272.1/AB2/1WTDOP) in Abacus 
+- [UBC Library Data and Statistics Guide](https://guides.library.ubc.ca/datastatistics) 
+
 
 \
 \
