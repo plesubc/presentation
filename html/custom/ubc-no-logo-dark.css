@@ -12,7 +12,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 body {
   #background: #fff;
-  background:url('images/RC_UBC_background.svg');
+  background:url('images/RC_UBC_background_dark.svg');
   background-size:cover;
   opacity:1;
   z-index:1;
@@ -35,7 +35,7 @@ left: 1.5em; }
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 30px;
   font-weight: normal;
-  color: #002145; }
+  color: #DDDDDD; }
 
   .reveal .slide-number {
     		font-size:24pt; }
@@ -87,7 +87,7 @@ left: 1.5em; }
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #002145;
+  color: #DDDDDD;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
