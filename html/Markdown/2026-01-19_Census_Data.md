@@ -202,7 +202,11 @@ Note:
 - Download CSV and reshape with Python, R, etc.
 	- Some files may be too large to open in Excel
 <br/><br/>
-- Download from SimplyAnalytics platform
+- Download from *Census Analyser* platform
+	- Available from UBC Library [here](https://resources.library.ubc.ca/page.php?details=canadian-census-analyser&id=521)
+	- Select desired geography, variables, and export format
+<br/><br/>
+- Download from *SimplyAnalytics* platform
 	- Available from UBC Library [here](https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044)<!-- .element target="_blank" -->
 	- Flexible export options, but only 5 users at a time
 	- Data from multiple sources (not only Census)
