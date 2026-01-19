@@ -35,7 +35,7 @@ Possibly ask students for show of hands, to prompt engagement and gauge class le
 
 - Collected every 5 years (2016, 2021, 2026...)
 - Mandated by law
-- _Short form_ (100%) and _long form_ (25%) [questionnaires](https://www12.statcan.gc.ca/census-recensement/2021/ref/98-304/2021001/chap5-eng.cfm) 
+- _Short form_ (100%) and _long form_ (25%) [questionnaires](https://www12.statcan.gc.ca/census-recensement/2021/ref/98-304/2021001/chap5-eng.cfm)<!-- .element target="_blank" --> 
 
 
 Note: From StatCan info page: "The Census of Population is the primary source of socioeconomic data for specific population groups and for detailed or small geographies. The Census of Population is mandated by law in the Constitution Act (1867) and the Statistics Act (1985) to determine the population of Canada and its' provinces and territories, every five years."
@@ -52,7 +52,7 @@ Note: From StatCan info page: "The Census of Population is the primary source of
 - Incompletely enumerated reserves and settlements <!-- .element: class="fragment" data-fragment-index="2" -->
 
 
-<https://www12.statcan.gc.ca/census-recensement/2021/ref/iers-repd-eng.cfm> <!-- .element: class="fragment" data-fragment-index="2" -->
+<https://www12.statcan.gc.ca/census-recensement/2021/ref/iers-repd-eng.cfm> <!-- .element: class="fragment" data-fragment-index="2" target="_blank" -->
  
 
 Note: Depending on your area of research, it's important to know that even the short form questionnaire misses some people, even though it goes to 100% of households. Here are two examples: homeless people, for example, are only counted if they're stay in a shelter when the count happens. And there are also indigenous reserves and settlements that are counted only partially, if at all. The link on this slide is to a table showing these areas. Some are not counted because the indigenous band council did not give permission to enter its territory. In other cases access may not have been possible (e.g. forest fires) or safe from a health perspective (e.g. COVID 19) 
@@ -69,7 +69,7 @@ Note: Depending on your area of research, it's important to know that even the s
 <br/>
 <br/>
 
-See [Reference Materials, 2021 Census](https://www12.statcan.gc.ca/census-recensement/2021/ref/index-eng.cfm)
+See [Reference Materials, 2021 Census](https://www12.statcan.gc.ca/census-recensement/2021/ref/index-eng.cfm)<!-- .element target="_blank" -->
 
 ---
 
@@ -104,7 +104,7 @@ We'll focus on Aggregated data, but the 'resources' slide has links to Public Us
 - Dissemination area
 - Dissemination block<!-- .element: class="fragment semi-fade-out" data-fragment-index="1" -->
 
-_<https://www150.statcan.gc.ca/n1/pub/92-195-x/92-195-x2021001-eng.htm>_ 
+_<https://www150.statcan.gc.ca/n1/pub/92-195-x/92-195-x2021001-eng.htm><!-- .element target="_blank" -->_ 
 
 Note: This is a partial list of the geographic areas referred to on Statistics Canada Census pages and in other StatCan products. The source, linked at the bottom of the slide, includes descriptions of each of the areas. For this clas I'm going to illustrate four frequently used Census geograpies. (Highlight, read 4). We'll look at each of these using Greater Vancouver as our example.
 
@@ -115,7 +115,7 @@ None of these correspond exactly to what municipalities designate as neighbourho
 <!-- .slide: data-transition="fade" -->
 ### Census metropolitan area (CMA)
 
-![CMA example](./Images/2025-01-20_Census_Data/geog_CMA.png)<!-- .element: height="400"-->
+![CMA example](./Images/2025-01-20_Census_Data/geog_CMA.png)<!-- .element: height="400" -->
 
 Note: This is the _Census Metropolitan Area_ - or CMA - of Vancouver. Many of the Public Use Microdata Files (PUMFs) only provide data at the CMA level. But in this class I understand you're interesed in variation _within_ the Vancouver CMA.
 
@@ -124,7 +124,7 @@ Note: This is the _Census Metropolitan Area_ - or CMA - of Vancouver. Many of th
 <!-- .slide: data-transition="fade" -->
 ### Census subdivision (CSD)
 
-![CSD example](./Images/2025-01-20_Census_Data/geog_CSD.png)<!-- .element: height="400"-->
+![CSD example](./Images/2025-01-20_Census_Data/geog_CSD.png)<!-- .element: height="400" -->
 
 
 
@@ -160,7 +160,7 @@ Note: The Dissemination area breaks the area down into smaller chunks.
 
 _Tour of Census Profiles on Statistics Canada website_  
 
-<https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm>
+<https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm><!-- .element target="_blank" -->
 
 Note:
 - Statcan page ->
@@ -196,14 +196,14 @@ Note:
 
 - Download IVT file and reshape in _Beyond 20/20 Professional Browser_
 	- Requires Windows
-	- Available on UBC Library [remote workstations](https://remotelabs.ubc.ca/#group-1028-data)
-	- UBC Library guide available [here](https://wiki.ubc.ca/Library:Beyond_20/20_Guide)
+	- Available on UBC Library [remote workstations](https://remotelabs.ubc.ca/#group-1028-data)<!-- .element target="_blank" -->
+	- UBC Library guide available [here](https://wiki.ubc.ca/Library:Beyond_20/20_Guide)<!-- .element target="_blank" -->
 <br/><br/>
 - Download CSV and reshape with Python, R, etc.
 	- Some files may be too large to open in Excel
 <br/><br/>
 - Download from SimplyAnalytics platform
-	- Available from UBC Library [here](https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044)
+	- Available from UBC Library [here](https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044)<!-- .element target="_blank" -->
 	- Flexible export options, but only 5 users at a time
 	- Data from multiple sources (not only Census)
 
@@ -215,7 +215,7 @@ Note:
 
 _Download Census 2021 Cartographic Boundary File (as shapefile)_
 
-<https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/index-eng.cfm>
+<https://www12.statcan.gc.ca/census-recensement/2021/geo/sip-pis/index-eng.cfm><!-- .element target="_blank" -->
 
 Note: 
 - From Census main page, click "Census Geography"
@@ -233,7 +233,7 @@ Note:
 
 _Tour of SimplyAnalytics (for map-ready data)_
 
-<https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044>
+<https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044><!-- .element target="_blank" -->
 
 Note:
 - Open project for Canada, Vancouver CMA ->
@@ -253,7 +253,7 @@ Note:
 * Land use/landcover
 * Vector contours
 * Postal codes at the Forward Sortation Area level (six digit postal codes)
-* <https://abacus.library.ubc.ca/dataverse/dmti>
+* <https://abacus.library.ubc.ca/dataverse/dmti><!-- .element target="_blank" -->
 
 
 Note:
@@ -301,8 +301,8 @@ Note:
 
 Can get many types of data quickly
 
-* QGIS: [Quick OSM plugin](https://plugins.qgis.org/plugins/QuickOSM/)
-* ArcGIS: [OSMQuery](https://github.com/riccardoklinger/OSMquery)
+* QGIS: [Quick OSM plugin](https://plugins.qgis.org/plugins/QuickOSM/)<!-- .element target="_blank" -->
+* ArcGIS: [OSMQuery](https://github.com/riccardoklinger/OSMquery)<!-- .element target="_blank" -->
 
 Note:
 
@@ -316,7 +316,7 @@ Note:
 
 ![choroplethmap](./Images/2025-01-20_Census_Data/choropleth1.jpeg)<!-- .element:  height="400"--><!-- .element: class="fragment" -->
 
-[Choropleth Maps by Uli Ingram](https://alg.manifoldapp.org/read/introduction-to-cartography/section/c3c06272-8b8b-49e7-a957-da0d06550b73#3-part-1)<!-- .element: class="fragment" -->
+[Choropleth Maps by Uli Ingram](https://alg.manifoldapp.org/read/introduction-to-cartography/section/c3c06272-8b8b-49e7-a957-da0d06550b73#3-part-1)<!-- .element: class="fragment" target="_blank" -->
 
 
 Note: 
@@ -333,7 +333,7 @@ Note:
 |   |   |
 |---|----|
 | ![Graduated symbol](./Images/2025-01-20_Census_Data/graduated_symbol.png)<!-- .element:  height="400"--> | ![Proportional symbol](./Images/2025-01-20_Census_Data/proportional_symbol.png)<!-- .element:  height="400"-->
-|[Proportional Symbols](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/proportional-symbology.htm)<!-- .element: style="font-size: 16pt;" --> | [Graduated Symbols](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/graduated-symbols.htm)<!-- .element: style="font-size: 16pt;" -->  | 
+|[Proportional Symbols](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/proportional-symbology.htm)<!-- .element: style="font-size: 16pt;" target="_blank" --> | [Graduated Symbols](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/graduated-symbols.htm)<!-- .element: style="font-size: 16pt;" target="_blank" -->  | 
 
 
 Note: 
@@ -351,7 +351,7 @@ Note:
 
 ![heatmap](./Images/2025-01-20_Census_Data/heatmap.jpeg)<!-- .element: height="400"-->
 
-[Heat maps](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/heat-map.htm)
+[Heat maps](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/heat-map.htm)<!-- .element target="_blank" -->
 
 Note:
 
@@ -367,7 +367,7 @@ Note:
 
 ![dotdensity](./Images/2025-01-20_Census_Data/dot_density.png)<!-- .element: height="400"-->
 
-[Dot Density Guide](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/dot-density.htm)
+[Dot Density Guide](https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/dot-density.htm)<!-- .element target="_blank" -->
 
 Note:
 
@@ -383,21 +383,23 @@ Note:
 <!-- .slide: style="font-size: 0.7em;" -->
 ## Selected resources 
 
-- [Census of Population](https://www12.statcan.gc.ca/census-recensement/index-eng.cfm) main page 
-- [Census Profile](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm) 
-- [Illustrated Glossary of Census Geography](https://www150.statcan.gc.ca/n1/pub/92-195-x/92-195-x2021001-eng.htm) 
-- [Geographic Attribute File](https://www12.statcan.gc.ca/census-recensement/2021/geo/aip-pia/attribute-attribs/index-eng.cfm) 
-- [SimplyAnalytics](https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044) UBC login page 
-- [2021 Census PUMF](https://hdl.handle.net/11272.1/AB2/1WTDOP) in Abacus 
-- [UBC Library Data and Statistics Guide](https://guides.library.ubc.ca/datastatistics) 
+- [Census of Population](https://www12.statcan.gc.ca/census-recensement/index-eng.cfm)<!-- .element target="_blank" --> main page 
+- [Census Profile](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm)<!-- .element target="_blank" -->
+- [Illustrated Glossary of Census Geography](https://www150.statcan.gc.ca/n1/pub/92-195-x/92-195-x2021001-eng.htm)<!-- .element target="_blank" --> 
+- [Geographic Attribute File](https://www12.statcan.gc.ca/census-recensement/2021/geo/aip-pia/attribute-attribs/index-eng.cfm)<!-- .element target="_blank" --> 
+- [SimplyAnalytics](https://resources.library.ubc.ca/page.php?details=simplyanalytics&id=1044)<!-- .element target="_blank" --> UBC login page 
+- [2021 Census PUMF](https://hdl.handle.net/11272.1/AB2/1WTDOP)<!-- .element target="_blank" --> in Abacus 
+- [UBC Library Data and Statistics Guide](https://guides.library.ubc.ca/datastatistics)<!-- .element target="_blank" --> 
 
 
 \
 \
-Data analysis/GIS workstations in [Digital Scholarship Lab](https://researchcommons.library.ubc.ca/digital-scholarship-workstations/) or by [remote login](https://remotelabs.ubc.ca/#group-1028-data)
+Data analysis/GIS workstations in [Digital Scholarship Lab](https://researchcommons.library.ubc.ca/digital-scholarship-workstations/)<!-- .element target="_blank" --> or by [remote login](https://remotelabs.ubc.ca/#group-1028-data)<!-- .element target="_blank" -->
 \
 \
 Alex Alisauskas, Humanities & Social Sciences Librarian [alexandra.alisauskas@ubc.ca](mailto:alexandra.alisauskas@ubc.ca)\
 Jeremy Buhler, Data Librarian [jeremy.buhler@ubc.ca](mailto:jeremy.buhler@ubc.ca)\
 Paul Lesack, Data/GIS Analyst [paul.lesack@ubc.ca](mailto:paul.lesack@ubc.ca)
 
+Other GIS contacts (consultations, licensing, etc)  
+**[gis.ubc.ca](https://gis.ubc.ca/contact)<!-- .element target="_blank" -->**
