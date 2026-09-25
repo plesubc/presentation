@@ -3,6 +3,7 @@
 
 |Date|Title|
 |--------|-------|
+|29 September 2026|[Statcan GIS/PLAN 506](html/2026-09-29_Abacus_Borealis.html)|
 |20 January 2026|[Statcan GIS/PLAN 506](html/2026-01-19_Census_Data.html)|
 |20 January 2025|[Statcan GIS](html/2025-01-20_Census_Data.html)|
 |20 June 2024| [Dataverse Utilities](html/2024-06-20_dataverse_utils_sp.html)|
