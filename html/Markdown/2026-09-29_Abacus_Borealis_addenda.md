@@ -58,7 +58,7 @@ Census of Canada. Topic-based Tabulations. Basic Cross-tabulations, 2001
 
 Specifically:
 
-<https://abacus.library.ubc.ca/file.xhtml?persistentId=hdl:11272.1/AB2/Y0PHTI/WSW0EU> cmpared to <https://borealisdata.ca/file.xhtml?fileId=29068&version=3.1>
+<https://abacus.library.ubc.ca/file.xhtml?persistentId=hdl:11272.1/AB2/Y0PHTI/WSW0EU> compared to <https://borealisdata.ca/file.xhtml?fileId=29068&version=3.1>
 
 
 Notes:
