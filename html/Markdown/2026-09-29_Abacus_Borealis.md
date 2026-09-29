@@ -1,4 +1,4 @@
-## Abacus-to-Borealis migration:
+## Abacus-to-Borealis migration
 ### Impact on Odesi
 <br/>
 
@@ -33,9 +33,9 @@ Of particular interest in the Odesi context is that Abacus has many Statistics C
 ## Migration/merging goals
 
 - Preserve access for Abacus users
-- Minimuze disruption to Borealis/Odesi 
+- Minimize disruption to Borealis/Odesi 
 
-**Challenges:** avoid duplication, maintain user experience in Odesi 
+**Challenge:** avoid duplication 
 
 Note: To put it simply, our goals with this migration are twofold: we want to preserve access for Abacus users with the least amount of disruption to the Borealis and Odesi community. To do this we can't simply migrate everything, we need to merge and deduplicate to avoid clutter and maintain the Odesi user experience.  
 
@@ -44,16 +44,16 @@ Note: To put it simply, our goals with this migration are twofold: we want to pr
 ## Migration strategy
 ### Three groups of Abacus datasets
 
-data that doesn't belong in Odesi/GeoPortal<br/>   <!-- .element class="fragment" -->
-_migrate to UBC Borealis_  <!-- .element class="fragment" -->
+Data that doesn't belong in Odesi/GeoPortal<br/>   <!-- .element class="fragment" -->
+_Migrate to UBC Borealis_  <!-- .element class="fragment" -->
 <br/><br/>
 
-geospatial data that belongs in GeoPortal<br/>   <!-- .element class="fragment" -->
-_merge after 2027 GeoPortal upgrade_   <!-- .element class="fragment" -->
+Geospatial data that belongs in GeoPortal<br/>   <!-- .element class="fragment" -->
+_Merge after 2027 GeoPortal upgrade_   <!-- .element class="fragment" -->
 <br/><br/>
 
-data that belongs in Odesi<br/>   <!-- .element class="fragment" --> 
-_merge with Odesi collections_  <!-- .element class="fragment" style="font-weight: bold; color:#800020"-->
+Data that belongs in Odesi<br/>   <!-- .element class="fragment" --> 
+_Merge with Odesi collections_  <!-- .element class="fragment" style="font-weight: bold; color:#800020"-->
 
 
 Note: Our migration strategy identifies three groups of Abacus data. The first group is data that doesn't belong in Odesi or Scholars Geoportal - for example, because it licensed only for UBC users or is otherwise not is scope for Odesi. The action for these datasets is to migrate them to UBC's own Borealis collection, where they will be available to users but won't conflict with current Odesi discovery paths.
@@ -162,8 +162,8 @@ For Employment dynamics, UBC just turned the notes into a PDF and the rest of it
 
 ## Scenario 3
 
-Abacus dataset held by Odesi, but Abacus has files that enhance <br/>
-_Add file to relevant Odesi dataset_ <!-- .element: class="fragment" --> 
+Abacus dataset held by Odesi, but Abacus has file(s) that enhance <br/>
+_Add file(s) to relevant Odesi dataset_ <!-- .element: class="fragment" --> 
 
 ---
 
@@ -185,7 +185,7 @@ Note:
 
 Borealis has a file with the same *name*, but with a different md5 and metadata which does not match the content of the IVT. In this case, there is a problem with the Borealis file. So that's not great.
 
----
+--
 
 ## Edge cases
 
